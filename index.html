@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+
+
+    <!--MD Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <title>Coutloot - Personal Assitant</title>
+  </head>
+
+  <body style="background-color: #f0f0f0;">
+    <div class="container-fluid shadow-sm" id="toolbar">
+        <div class="row no_space"> 
+            <div class="col-md-7 no_space" id="toolbar_options"> 
+
+                <img  src="images/butler.png" id="toolbar_butler_logo">  
+                <select id="toolbar_responsibility_box" onchange="toolbar_options_chooser()">
+                        <option selected disabled>I'm Responsible for..</option>
+                        <option>Order Confirmations</option>
+                        <option>Confirmed Transactions</option>
+                        <option>Scheduled Pickups</option>
+                        <option>In-Transit Pickups</option>
+                        <option>To Ship Products Out</option>
+                        <option>Make Sure products are Delivered</option>
+                </select>
+
+            </div>
+            
+            <div class="col-md-5 no_space">
+                <img src="https://coutloot.com/assets/images/cl-logo.png" id="toolbar_logo">    
+            </div>
+        </div>  
+    </div>
+
+    <div class="container-fluid" id="intro_frame">
+            <div class="row no_space">
+                <img src="images/butler.png" id="butler">
+            </div>
+            
+            <div class="row no_space">
+                 <p class ="text-center" id="label">Hi m  Albert! How're you doing? I m here to help.<br>Tell me what are you responsible for?</p>
+            </div>
+
+            <div class="row no_space align-items-center">
+                    <select id="responsibility_box" onchange="options_chooser()">
+                        <option selected disabled>I'm Responsible for..</option>
+                        <option>Order Confirmations</option>
+                        <option>Confirmed Transactions</option>
+                        <option>Scheduled Pickups</option>
+                        <option>In-Transit Pickups</option>
+                        <option>To Ship Products Out</option>
+                        <option>Make Sure products are Delivered</option>
+                    </select>
+            </div>
+    </div>
+
+    <div class="container-fluid" id="main_frame">
+        <div class="row"> 
+            
+            <ul class="col-md-3 list-group-flush shadow-sm" id="side_menu">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Assign a Task.
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Callback to Sellers
+                <span class="badge badge-primary badge-pill">14</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Logistic Partner Queries
+                <span class="badge badge-primary badge-pill">2</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Payments Pending
+                <span class="badge badge-primary badge-pill">1</span>
+                </li>
+            </ul>
+
+
+            <ul class="col-md-8 col-sm-12 list-group-flush shadow-sm" id="remainders">
+                <li class="list-group-item remainder">
+                    <div class="container-fluid" id="order_confirmation_remainder_block"">
+                        <div class="row no_space">
+                            <img class="col-md-2 rounded-circle no_space" id="li_icon" src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5MDJHu9fWGzDpgQ9hs8orw2AIhkKAUMQ____________ARi4vqL7______8B/w80-h80/photo.jpg">
+                            <div  class="col-md-8 no_space">
+                                <p class="col-md-12" id="li_title">Kindly get this order confirmed.</p>
+                                <p  class="col-md-12" id="li_remainder_text">Sir, would like to remind you... that the #63271 is placed by Mahima Kaul since 3 days & still not confirmed. Kindly take a necesaary action to avoid delay.</p>
+                                <p  class="col-md-12 font-italic li_more_info_label" id="li_more_info_label4">Hello Albert here, I can get you little more details about this issue..</p>
+                            </div>
+                            <div class="col-md-3 no_space">
+                                <p id="li_date">Order Date<br>2nd Nov , 2:58 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="row no_space">
+                            <div class="col-md-8 no_space">
+                                <div class="row no_space" id="common_menu">
+                                    <div class="col-md-1 li_icon_action_button rounded">
+                                        <i class="material-icons" style="font-size:20px;">feedback</i>
+                                    </div>
+                                    <div class="col-md-1 li_icon_action_button rounded">
+                                        <i class="material-icons" style="font-size:20px;">notifications_active</i>
+                                    </div>
+                                    <div class="col-md-1 li_icon_action_button rounded">
+                                        <i class="material-icons" style="font-size:20px;">alternate_email</i>
+                                    </div>
+                                     <div class="col-md-1 li_icon_action_button rounded show_actions">
+                                        <i class="material-icons" style="font-size:20px;">add_circle</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 no_space"> 
+                                <div class="row no_space li_action_menu">
+                                    <p class="col-md-4 li_action_button rounded">Confirm</p>
+                                    <p class="col-md-4 li_action_button rounded">Cancel</p>
+                                    <p class="col-md-4 li_action_button rounded">Comment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item remainder">
+                    <div class="container-fluid" id="seller_callback_remainder_block"">
+                        <div class="row no_space">
+                            <img class="col-md-2 rounded-circle no_space" id="li_icon" src="https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/avatars/avatar_tile_m_80.png">
+                            <div  class="col-md-8 no_space">
+                                <p class="col-md-12" id="li_title">Kindly repond to the seller's callback request.</p>
+                                <p  class="col-md-12" id="li_remainder_text">Hello, Roshni has requested a call-back regarding her product ordered on 3rd Oct 18, She has requested a call back on 8th Oct. It's been more than 2 days ..she's waiting! Kindly call her back on +919820488945.</p>
+                                <p  class="col-md-12 font-italic li_more_info_label" id="li_more_info_label3">Hello Albert here, I can get you little more details about this issue..</p>
+                            </div>
+                            <div class="col-md-3 no_space">
+                                <p id="li_date">Call Back Requested On<br>8th Oct , 7:50 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="row no_space">
+                            <div class="col-md-6 no_space">
+                                <div class="row no_space" id="common_menu">
+                                    <div class="col-md-1 li_icon_action_button rounded">
+                                        <i class="material-icons" style="font-size:20px;">feedback</i>
+                                    </div>
+                                    <div class="col-md-1 li_icon_action_button rounded">
+                                        <i class="material-icons" style="font-size:20px;">notifications_active</i>
+                                    </div>
+                                    <div class="col-md-1 li_icon_action_button rounded">
+                                        <i class="material-icons" style="font-size:20px;">alternate_email</i>
+                                    </div>
+                                     <div class="col-md-1 li_icon_action_button rounded show_actions">
+                                        <i class="material-icons" style="font-size:20px;">add_circle</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 no_space"> 
+                                <div class="row no_space li_action_menu">
+                                    <p class="col-md-4 li_action_button rounded">Call & Confirm</p>
+                                    <p class="col-md-4 li_action_button rounded">Cancel</p>
+                                    <p class="col-md-4 li_action_button rounded">Didn't Answer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </li>
+
+
+                <li class="list-group-item remainder">
+                    <div class="container-fluid" id="seller_callback_remainder_block"">
+                        <div class="row no_space">
+                            <img class="col-md-2 rounded-circle no_space" id="li_icon" src="https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/avatars/avatar_tile_k_80.png">
+                            <div  class="col-md-8 no_space">
+                                <p class="col-md-12" id="li_title">Pickup's confirmed but yet not scheduled, Don't Delay.</p>
+                                <p  class="col-md-12" id="li_remainder_text">Deepak has confirmed the pick up of the products of order #12344 placed on 3rd Oct by Saima. It's not scheduled to be picked up. Kindly get this order converted.</p>
+                                <p  class="col-md-12 font-italic li_more_info_label" id="li_more_info_label2">Hello Albert here, I can get you little more details about this issue..</p>
+                            </div>
+                            <div class="col-md-3 no_space">
+                                <p id="li_date">Confirmed On<br>12th Oct , 7:50 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="row no_space">
+                            <div class="col-md-6 no_space">
+                                <div class="row no_space" id="common_menu">
+                                    <div class="col-md-1 li_icon_action_button rounded ">
+                                        <i class="material-icons" style="font-size:20px;">feedback</i>
+                                    </div>
+                                    <div class="col-md-1 li_icon_action_button rounded ">
+                                        <i class="material-icons" style="font-size:20px;">notifications_active</i>
+                                    </div>
+                                    <div class="col-md-1 li_icon_action_button rounded ">
+                                        <i class="material-icons" style="font-size:20px;">alternate_email</i>
+                                    </div>
+                                     <div class="col-md-1 li_icon_action_button rounded show_actions">
+                                        <i class="material-icons" style="font-size:20px;">add_circle</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 no_space"> 
+                                <div class="row no_space li_action_menu">
+                                    <p class="col-md-4 li_action_button rounded">Schedule</p>
+                                    <p class="col-md-4 li_action_button rounded">Cancel</p>
+                                    <p class="col-md-4 li_action_button rounded">Comment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </li>
+
+                <li class="list-group-item remainder">
+                    <div class="container-fluid" id="seller_callback_remainder_block"">
+                        <div class="row no_space">
+                            <img class="col-md-2 rounded-circle no_space" id="li_icon" src="https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/avatars/avatar_tile_d_80.png">
+                            <div  class="col-md-8 no_space">
+                                <p class="col-md-12" id="li_title">Pickup's scheduled but yet not picked up.</p>
+                                <p  class="col-md-12" id="li_remainder_text">A pickup scheduled with Delhivery on 3rd Nov 18 is not yet picked up. It's more than 4 days seller has confirmed the order & no action over it. Kindly get the product picked up</p>
+                                <p  class="col-md-12 font-italic li_more_info_label" id="li_more_info_label1" >Hello Albert here, I can get you little more details about this issue..</p>
+                            </div>
+                            <div class="col-md-3 no_space">
+                                <p id="li_date">Scheduled On<br>3rd Oct , 7:50 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="row no_space">
+                            <div class="col-md-4 no_space">
+                                <div class="row no_space" id="common_menu">
+                                    <div class="col-md-1 li_icon_action_button rounded">
+                                        <i class="material-icons" style="font-size:20px;">feedback</i>
+                                    </div>
+                                    <div class="col-md-1 li_icon_action_button rounded">
+                                        <i class="material-icons" style="font-size:20px;">notifications_active</i>
+                                    </div>
+                                    <div class="col-md-1 li_icon_action_button rounded">
+                                        <i class="material-icons" style="font-size:20px;">alternate_email</i>
+                                    </div>
+                                     <div class="col-md-1 li_icon_action_button rounded show_actions">
+                                        <i class="material-icons" style="font-size:20px;">add_circle</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 no_space"> 
+                                <div class="row no_space li_action_menu">
+                                    <p class="col-md-3 li_action_button rounded">Re-Schedule</p>
+                                    <p class="col-md-3 li_action_button rounded">Connect Partner</p>
+                                    <p class="col-md-3 li_action_button rounded">Cancel</p>
+                                    <p class="col-md-3 li_action_button rounded">Comment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </li>
+            </ul>
+
+
+       
+        
+
+        </div>
+    </div>
+
+
+    <div class="modal fade left" id="confirm_seller_layout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+        <div class="modal-dialog modal-full-height modal-left" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                   <div class="container-fluid">
+                        <div class="row no_space">
+                            <img id="butler" src="images/butler.png">
+                        </div>
+
+                        <div class="row no_space">
+                            <p id="modal_header">Regarding Confirmations with Mahima!</p>
+                            <p id="modal_subheader">3 products mentioned below are sold from her closet in last 7 days, All confirmations pending.</p>
+                            <div class="container-fluid">
+                                <ul class="row no_space list-group-flush">
+                                    <li class="col-md-12 col-sm-12 list-group-item">
+                                        <div class="container-fluid">
+                                            <div class="row no_space">
+                                                <img class="col-md-2 rounded-circle no_space" id="li_icon" src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5MDJHu9fWGzDpgQ9hs8orw2AIhkKAUMQ____________ARi4vqL7______8B/w80-h80/photo.jpg">
+                                                <div class="col-md-9">
+                                                    <p class="li_product_title">This is the title of the product</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="col-md-12 col-sm-12 list-group-item">
+                                        <div class="container-fluid">
+                                            <div class="row no_space">
+                                                <img class="col-md-2 rounded-circle no_space" id="li_icon" src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5MDJHu9fWGzDpgQ9hs8orw2AIhkKAUMQ____________ARi4vqL7______8B/w80-h80/photo.jpg">
+                                                <div class="col-md-9">
+                                                    <p class="li_product_title">This is the title of the product</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                   
+                </div>
+          </div>
+        </div>
+    </div>
+    
+
+
+    <!--JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/js/mdb.min.js"></script>
+
+  </body>
+</html>

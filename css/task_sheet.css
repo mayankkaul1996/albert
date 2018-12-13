@@ -1,0 +1,29 @@
+.no_space{
+	margin: 0px!important;
+	padding:0px!important;
+}
+
+#toolbar{
+	background-color: #FFFFFF;
+}
+
+#toolbar_logo{
+	width: 190px;
+	height: auto;
+	padding: 10px;
+	float: right;
+}
+
+#responsibility_box
+{
+	float: center;
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+  	border-color: #CCCCCC;
+  	color: #666666;
+  	padding: 10px;
+  	background-color: #F0F0F0; 	
+    margin: auto;
+    text-align:center
+}

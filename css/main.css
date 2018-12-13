@@ -1,0 +1,398 @@
+.no_space{
+	margin: 0px!important;
+	padding:0px!important;
+}
+
+
+#butler{
+	height: 250px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#toolbar_logo{
+		width: 190px;
+		height: auto;
+		padding: 10px;
+		float: right;
+	}
+
+
+
+
+#toolbar{
+	background-color: #FFFFFF;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+
+#toolbar_options{
+	display: inline-block;
+}
+
+
+
+#toolbar_responsibility_box{
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+  	border-color: #CCCCCC;
+  	color: #666666;
+  	padding: 10px;
+  	background-color: #F0f0f0;
+    text-align:center;
+    margin-top: 5px;
+    display: none;
+}
+
+#responsibility_box
+{
+	float: center;
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+  	border-color: #CCCCCC;
+  	color: #666666;
+  	padding: 10px;
+  	background-color: #FFFFFF; 	
+    margin: auto;
+    text-align:center
+}
+
+
+#main_frame{
+display: none;
+}
+
+
+@media (max-width: 767.98px) 
+{ 
+	.remainder:hover{
+		
+	}
+
+	#toolbar_logo{
+		display: none;
+	}
+
+
+	#label
+	{
+		line-height: 1;
+		font-size: 15px;
+		color: #444444;
+		font-family: Lato;
+		width:-webkit-fill-available;
+	}
+
+	#remainders{
+		margin: 6px;
+		background-color: white;
+	}
+
+	#side_menu{
+		margin: 6px;
+		padding: 0px;
+		height:fit-content;
+		background-color: white;
+	}
+
+	.remainder:hover{
+	}
+
+
+
+	#li_icon{
+		max-width: 50px;
+		max-height: 50px;
+		display: none;
+	}
+
+
+	#li_title{
+		font-size: 17px;
+		font-weight: bold;
+		padding-left: 10px;
+		color: #333333;
+		font-family: Lato;
+		margin-bottom: 0px!important;
+		padding-bottom: 0px!important;
+		line-height: 1;
+		margin-top:3px;
+	}
+
+
+	#li_remainder_text{
+		padding-left: 10px;
+		font-family: Lato;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		color: #777777;
+		line-height: 1;
+		font-size: 14px;
+	}
+
+
+	.li_more_info_label
+	{
+		padding-left: 10px;
+		padding-top: 3px;
+		margin-bottom: 20px;
+		font-family: Lato;
+		font-size: 10px;
+		font-weight: bold;
+		color: #FF4081;
+		cursor: pointer;
+		line-height: 1;
+	}
+
+	.li_icon_action_button{
+	color: #666666;	
+	width: auto;
+	text-align: center;
+	cursor: pointer;
+	padding-right: 6px;
+	}
+
+	.li_action_menu{
+		display: none;
+	}
+
+
+	.li_action_button:hover{
+	}
+
+	.show_actions{
+		display: block;
+	}
+
+	#li_date{
+	color: #777777;
+	padding: 3px;
+	font-size: 10px;
+	font-family: Lato;
+	text-align: right;
+	line-height: 1;
+	}
+
+	#label
+	{
+		line-height: 1;
+		font-size: 15px;
+		color: #444444;
+		font-family: Lato;
+		width:-webkit-fill-available;
+	}
+
+
+	#remainders{
+	margin: 5px;
+	background-color: white;}
+
+
+	#toolbar_butler_logo{
+		width: auto;
+		height: 50px;
+		padding: 5px;
+		display: none;
+	}
+
+
+	.li_action_button{
+		color: #FF4081;
+		padding: 6px;
+		line-height: 1;
+		font-family: Lato;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.li_action_button:hover{
+		background-color: #F0f0f0;
+	}
+
+	#modal_header{
+		font-size: 15px;
+		color: #444444;
+		width: -webkit-fill-available;
+		font-family: Lato;
+		text-align: center;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	#modal_subheader{
+		font-size: 13px;
+		color: #777777;
+		width: -webkit-fill-available;
+		font-family: Lato;
+		text-align: center;
+	}
+
+	.li_product_title{
+		font-size: 14px;
+		color: black;
+		font-weight: bold;
+	}
+}
+
+
+/*  Everything above Desktop */
+@media (min-width: 768px) {
+	.show_actions{
+		display: none;
+	}
+
+	.remainder:hover{
+		background: #F0f0f0;
+	}
+
+	#li_date{
+	color: #777777;
+	padding: 3px;
+	font-size: 12px;
+	font-family: Lato;
+	text-align: right;
+	line-height: 1;
+	}
+
+	#label
+	{
+		line-height: 1;
+		font-size: 20px;
+		color: #444444;
+		font-family: Lato;
+		width:-webkit-fill-available;
+	}
+
+
+	#remainders{
+	margin: 10px;
+	background-color: white;}
+
+
+	#side_menu{
+		margin: 10px;
+		padding: 0px;
+		background-color: white;
+		height:fit-content;
+	}
+
+
+	#li_icon{
+		max-width: 50px;
+		max-height: 50px;
+	}
+
+	#li_title{
+		font-size: 18px;
+		font-weight: bold;
+		padding-left: 10px;
+		color: #333333;
+		font-family: Lato;
+		margin-bottom: 0px!important;
+		padding-bottom: 0px!important;
+		line-height: 1;
+		margin-top:5px;
+	}
+
+
+	#li_remainder_text{
+		padding-left: 10px;
+		font-family: Lato;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		color: #777777;
+		line-height: 1;
+	}
+
+	.li_more_info_label
+	{
+		padding-left: 10px;
+		padding-top: 3px;
+		margin-bottom: 20px;
+		font-family: Lato;
+		font-size: 11px;
+		font-weight: bold;
+		color: #333333;
+		cursor: pointer;
+		line-height: 1;
+	}
+
+
+	.li_icon_action_button{
+	color: #666666;	
+	text-align: center;
+	cursor: pointer;
+	}
+
+
+
+	.li_action_button{
+		color: #FF4081;
+		padding: 6px;
+		line-height: 1;
+		font-family: Lato;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.li_action_button:hover{
+		background-color: #CCCCCC;
+	}
+
+
+	#toolbar_butler_logo{
+		width: auto;
+		height: 60px;
+		padding: 5px;
+		display: none;
+	}
+
+
+	#modal_header{
+		font-size: 16px;
+		color: #444444;
+		font-family: Lato;
+		text-align: center;
+		width:-webkit-fill-available;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	#modal_subheader{
+		font-size: 14px;
+		color: #777777;
+		font-family: Lato;
+		text-align: center;
+		width:-webkit-fill-available;
+	}
+
+	.li_product_title{
+		font-size: 15px;
+		color: black;
+		font-weight: bold;
+		max-width: max-content;
+	}
+}
+
+
+
+
+.li_icon_action_button:hover{
+	background-color: #F0f0f0;
+	color: #FF4081;
+}
+
+#extra_info_layout{
+	padding-left: 0px;
+	padding-top: 4px;
+	padding-bottom: 6px;
+	margin: 0px;
+}
